@@ -37,7 +37,7 @@ function App() {
       features: ['Blog post creation and editing', 'Categorization', 'Image support', 'AI Blog Content Assistant'],
       takeaway: 'Learned how to combine functionality and design while working with full-stack technologies.',
       challenge: 'Connecting the front-end and back-end smoothly while keeping the interface responsive and easy to use.',
-      link: 'dreamlog-production.up.railway.app',
+      link: 'https://www.figma.com/proto/QN1ciWkcKIMqVOS6GO8UAq/DreamLog?node-id=183-12&starting-point-node-id=183%3A12&t=tDTr1jlfsT8M0bD2-1',
     }
   ];
 
@@ -279,7 +279,7 @@ function App() {
                 {project.link && (
                   <div className="project-link-section">
                     <a 
-                      href={`https://${project.link}`} 
+                      href={`${project.link}`} 
                       target="_blank" 
                       rel="noopener noreferrer"
                       className="project-link-btn"
