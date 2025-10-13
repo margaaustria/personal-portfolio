@@ -99,22 +99,6 @@ function App() {
         ))}
       </div>
 
-      {/* Hero Section */}
-      <div className="hero">
-        <div className="hero-content">
-          <h1 className="hero-title">Margarette Calumpiano</h1>
-          <div className="hero-line"></div>
-          <div className="hero-badges">
-            <span className="badge badge-purple"> BS Information Systems</span>
-            <span className="badge badge-pink"> Third Year Student</span>
-            <span className="badge badge-blue"> Mangatarem, Pangasinan</span>
-          </div>
-          <p className="hero-subtitle">
-            Passionate about creating beautiful and functional web experiences ✨
-          </p>
-        </div>
-      </div>
-
       {/* Navigation */}
       <nav className="nav-container">
         <div className="nav-bar">
@@ -138,6 +122,22 @@ function App() {
           </div>
         </div>
       </nav>
+
+      {/* Hero Section */}
+      <div className="hero">
+        <div className="hero-content">
+          <h1 className="hero-title">Margarette Calumpiano</h1>
+          <div className="hero-line"></div>
+          <div className="hero-badges">
+            <span className="badge badge-purple"> BS Information Systems</span>
+            <span className="badge badge-pink"> Third Year Student</span>
+            <span className="badge badge-blue"> Mangatarem, Pangasinan</span>
+          </div>
+          <p className="hero-subtitle">
+            Passionate about creating beautiful and functional web experiences ✨
+          </p>
+        </div>
+      </div>
 
       {/* Main Content */}
       <div className="main-content">
