@@ -93,6 +93,12 @@ function App() {
       url: 'https://github.com/margaaustria',
       icon: '💻',
       color: 'from-gray-700 to-gray-900'
+    },
+    {
+      name: 'Email',
+      url: 'https://mail.google.com/mail/u/5/?ogbl#inbox',
+      icon: '📩',
+      color: 'from-gray-700 to-gray-900'
     }
   ];
 
