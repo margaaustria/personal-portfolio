@@ -1,3 +1,4 @@
+// App.js
 import React, { useState, useEffect } from 'react';
 import './App.css';
 
@@ -18,6 +19,7 @@ function App() {
     { id: 'about', label: 'About' },
     { id: 'projects', label: 'Projects' },
     { id: 'skills', label: 'Skills' },
+    { id: 'contact', label: 'Contact' },
   ];
 
   const projects = [
@@ -67,6 +69,33 @@ function App() {
     { skill: 'Adaptability and Willingness to Learn', icon: '🌱' }
   ];
 
+  const socialLinks = [
+    {
+      name: 'Facebook',
+      url: 'https://www.facebook.com/margarette.calumpiano.56',
+      icon: '📘',
+      color: 'from-blue-500 to-blue-600'
+    },
+    {
+      name: 'Instagram',
+      url: 'https://www.instagram.com/dy_mar04/',
+      icon: '📷',
+      color: 'from-pink-500 to-purple-600'
+    },
+    {
+      name: 'LinkedIn',
+      url: 'https://www.linkedin.com/in/margarette-calumpiano-63614a356/',
+      icon: '💼',
+      color: 'from-blue-600 to-blue-700'
+    },
+    {
+      name: 'GitHub',
+      url: 'https://github.com/margaaustria',
+      icon: '💻',
+      color: 'from-gray-700 to-gray-900'
+    }
+  ];
+
   return (
     <div className="portfolio">
       {/* Animated Background */}
@@ -82,6 +111,30 @@ function App() {
         <div className="blob blob-1"></div>
         <div className="blob blob-2"></div>
       </div>
+
+         {/* Navigation */}
+      <nav className="nav-container">
+        <div className="nav-bar">
+          <div className="nav-logo">
+            <span className="logo-text">Margaux_04</span>
+          </div>
+          
+          <div className="nav-menu">
+            {sections.map(section => (
+              <button
+                key={section.id}
+                onClick={() => setActiveSection(section.id)}
+                className={`nav-btn ${activeSection === section.id ? 'active' : ''}`}
+              >
+                {section.label}
+              </button>
+            ))}
+            
+            <button className="nav-btn external-btn">Résumé ↗</button>
+          </div>
+        </div>
+      </nav>
+
 
       {/* Floating Particles */}
       <div className="particles">
@@ -99,30 +152,6 @@ function App() {
         ))}
       </div>
 
-      {/* Navigation */}
-      <nav className="nav-container">
-        <div className="nav-bar">
-          <div className="nav-logo">
-            <span className="logo-text">Maurgaux_04</span>
-          </div>
-          
-          <div className="nav-menu">
-            {sections.map(section => (
-              <button
-                key={section.id}
-                onClick={() => setActiveSection(section.id)}
-                className={`nav-btn ${activeSection === section.id ? 'active' : ''}`}
-              >
-                {section.label}
-              </button>
-            ))}
-            
-            <button className="nav-btn contact-btn">Contact</button>
-            <button className="nav-btn resume-btn">Resume </button>
-          </div>
-        </div>
-      </nav>
-
       {/* Hero Section */}
       <div className="hero">
         <div className="hero-content">
@@ -139,6 +168,7 @@ function App() {
         </div>
       </div>
 
+    
       {/* Main Content */}
       <div className="main-content">
         {/* About Section */}
@@ -182,7 +212,7 @@ function App() {
                 <p className="card-text">
                   Outside of school, I enjoy being just a normal sister for my younger sisters. I love watching anime (especially 
                   <span className="highlight-orange"> Haikyū!!</span> 🏐), and I'm a big fan of reading manga, Wattpad, 
-                  and any random stories I come across. 
+                  and any random stories I come across.
                 </p>
               </div>
             </div>
@@ -207,7 +237,7 @@ function App() {
                 <p className="project-description">{project.description}</p>
                 
                 <div className="tech-section">
-                  <h4 className="tech-title"> Technologies Used:</h4>
+                  <h4 className="tech-title">✨ Technologies Used:</h4>
                   <div className="tech-tags">
                     {project.tech.map((tech, i) => (
                       <span key={i} className="tech-tag">{tech}</span>
@@ -217,7 +247,7 @@ function App() {
 
                 {project.features && (
                   <div className="features-section">
-                    <h4 className="features-title"> Features:</h4>
+                    <h4 className="features-title">✨ Features:</h4>
                     <div className="features-list">
                       {project.features.map((feature, i) => (
                         <div key={i} className="feature-item">
@@ -231,11 +261,11 @@ function App() {
 
                 <div className="insights-grid">
                   <div className="insight-box insight-green">
-                    <h4 className="insight-title"> Key Takeaways:</h4>
+                    <h4 className="insight-title">💡 Key Takeaways:</h4>
                     <p>{project.takeaway}</p>
                   </div>
                   <div className="insight-box insight-yellow">
-                    <h4 className="insight-title"> Challenges:</h4>
+                    <h4 className="insight-title">⚡ Challenges:</h4>
                     <p>{project.challenge}</p>
                   </div>
                 </div>
@@ -294,6 +324,50 @@ function App() {
                     <div className="soft-skill-text">{item.skill}</div>
                   </div>
                 ))}
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* Contact Section */}
+        {activeSection === 'contact' && (
+          <div className="section fade-in">
+            <div className="section-header">
+              <h1 className="section-title">Let's Connect!</h1>
+              <p className="section-subtitle">Feel free to reach out on any of these platforms!!</p>
+            </div>
+
+            <div className="contact-container">
+              <div className="contact-intro">
+                <div className="contact-emoji">✨</div>
+                <h2 className="contact-heading">Get In Touch</h2>
+                <p className="contact-text">
+                  I'm always excited to connect with fellow developers, potential collaborators, 
+                  or anyone interested in my work. Whether you have a question, want to discuss a project, 
+                  or just want to say hi, don't hesitate to reach out!
+                </p>
+              </div>
+
+              <div className="social-links-grid">
+                {socialLinks.map((social, index) => (
+                  <a
+                    key={index}
+                    href={social.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="social-card"
+                  >
+                    <div className="social-icon">{social.icon}</div>
+                    <div className="social-name">{social.name}</div>
+                    <div className="social-arrow">→</div>
+                  </a>
+                ))}
+              </div>
+
+              <div className="contact-footer">
+                <p className="contact-footer-text">
+                  📧 Or send me an email and I'll get back to you as soon as possible!
+                </p>
               </div>
             </div>
           </div>
