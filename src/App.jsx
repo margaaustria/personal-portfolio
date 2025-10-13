@@ -38,7 +38,23 @@ function App() {
       takeaway: 'Learned how to combine functionality and design while working with full-stack technologies.',
       challenge: 'Connecting the front-end and back-end smoothly while keeping the interface responsive and easy to use.',
       link: 'https://www.figma.com/proto/QN1ciWkcKIMqVOS6GO8UAq/DreamLog?node-id=183-12&starting-point-node-id=183%3A12&t=tDTr1jlfsT8M0bD2-1',
-    }
+    },
+    {
+      title: 'Margaux Cafe',
+      description: 'A prototype coffee order management system designed to make ordering beverages easy and enjoyable. It allows users to browse, customize, and place coffee orders through an inviting and café-themed interface.',
+      tech: ['Figma (prototyping)'],
+      takeaway: 'This project helped me understand how to connect the front-end ordering interface with back-end order management while maintaining a warm, user-friendly design.',
+      challenge: 'Designing an interface that feels both aesthetic and functional like a real café menu, while ensuring smooth interaction for first-time users.',
+      link: 'https://www.figma.com/proto/ETH7phkzLPeVyJtI0vmycY/Lab-Act-Figma?node-id=1-2&starting-point-node-id=1%3A2',
+    },
+    {
+      title: 'Margaux-food',
+      description: 'A mobile food ordering prototype that allows users to browse menus, filter food categories, and order meals conveniently. It focuses on simplicity and visual appeal for an intuitive user experience.',
+      tech: ['Figma'],
+      takeaway: 'Through this practical project, I learned how to design and structure a mobile interface that is both functional and user-friendly, especially for ordering systems.',
+      challenge: 'The main challenge was creating a clean layout and ensuring the interface worked well across different screen sizes while maintaining a consistent aesthetic.',
+      link: 'https://www.figma.com/proto/co5UZgphogElrFnXigAgr4/PRACTICAL_CALUMPIANO_BSIS2?node-id=162-419',
+    },
   ];
 
   const technicalSkills = {
