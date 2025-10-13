@@ -155,7 +155,7 @@ function App() {
       {/* Hero Section */}
       <div className="hero">
         <div className="hero-content">
-          <h1 className="hero-title">Margarette Calumpiano</h1>
+          <h1 className="hero-title">Margarette Austria Calumpiano</h1>
           <div className="hero-line"></div>
           <div className="hero-badges">
             <span className="badge badge-purple"> BS Information Systems</span>
