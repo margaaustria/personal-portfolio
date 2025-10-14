@@ -152,7 +152,13 @@ function App() {
               </button>
             ))}
             
-            <button className="nav-btn external-btn">Résumé ↗</button>
+           <a 
+              href={`${import.meta.env.BASE_URL}resume.pdf`}
+              download="Margarette_Calumpiano_Resume.pdf"
+              className="nav-btn external-btn"
+            >
+              Résumé ↗
+            </a>
           </div>
         </div>
       </nav>
