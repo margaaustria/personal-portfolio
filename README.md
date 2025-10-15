@@ -42,5 +42,5 @@ Want to get in touch? This section has links to my social profiles like Facebook
 ###Live Demo
 You can access the live version of your portfolio once it's deployed:
 
-GitHub Pages URL: https://margaaustria.github.io/personal-portfolio/
-Demo Recording: https://drive.google.com/drive/folders/1OYroTUsHNiaP9kw1wYACZj3cg591DYHH?usp=sharing
+* GitHub Pages URL: https://margaaustria.github.io/personal-portfolio/
+* Demo Recording: https://drive.google.com/drive/folders/1OYroTUsHNiaP9kw1wYACZj3cg591DYHH?usp=sharing
