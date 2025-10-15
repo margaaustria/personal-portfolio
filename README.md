@@ -39,7 +39,7 @@ Want to get in touch? This section has links to my social profiles like Facebook
 * Easy navigation between sections
 * Clean, modern design with smooth transitions
 
-###Live Demo
+### Live Demo
 You can access the live version of your portfolio once it's deployed:
 
 * GitHub Pages URL: https://margaaustria.github.io/personal-portfolio/
