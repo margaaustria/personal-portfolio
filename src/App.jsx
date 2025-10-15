@@ -265,7 +265,7 @@ function App() {
                 <p className="project-description">{project.description}</p>
                 
                 <div className="tech-section">
-                  <h4 className="tech-title">✨ Technologies Used:</h4>
+                  <h4 className="tech-title"> Technologies Used:</h4>
                   <div className="tech-tags">
                     {project.tech.map((tech, i) => (
                       <span key={i} className="tech-tag">{tech}</span>
@@ -275,7 +275,7 @@ function App() {
 
                 {project.features && (
                   <div className="features-section">
-                    <h4 className="features-title">✨ Features:</h4>
+                    <h4 className="features-title"> Features:</h4>
                     <div className="features-list">
                       {project.features.map((feature, i) => (
                         <div key={i} className="feature-item">
@@ -289,11 +289,11 @@ function App() {
 
                 <div className="insights-grid">
                   <div className="insight-box insight-green">
-                    <h4 className="insight-title">💡 Key Takeaways:</h4>
+                    <h4 className="insight-title"> Key Takeaways:</h4>
                     <p>{project.takeaway}</p>
                   </div>
                   <div className="insight-box insight-yellow">
-                    <h4 className="insight-title">⚡ Challenges:</h4>
+                    <h4 className="insight-title"> Challenges:</h4>
                     <p>{project.challenge}</p>
                   </div>
                 </div>
