@@ -59,8 +59,9 @@ Clone this repository to your local machine:
 Start the development server:
 * npm run dev
 * Open your browser and visit http://localhost:port (usually 5173 is the default port) to view the site locally.
-Deployment
-* To deploy your portfolio to GitHub Pages:
+
+### Deployment
+To deploy your portfolio to GitHub Pages:
 * Build the project for production:
 * npm run build
 * Push the build folder to your GitHub Pages branch (usually gh-pages):
