@@ -38,6 +38,35 @@ Want to get in touch? This section has links to my social profiles like Facebook
 * Animated background with interactive effects
 * Easy navigation between sections
 * Clean, modern design with smooth transitions
+  
+________________________________________________________________
+### Setup Instructions
+To run this project locally, follow the steps below:
+
+### Prerequisites
+Ensure you have Node.js and npm (or yarn) installed on your computer.
+
+
+### Installation
+Clone this repository to your local machine:
+
+ * git clone https://github.com/your-username/personal-portfolio.git
+
+### Navigate to the project directory:
+* cd personal-portfolio
+* Install dependencies:
+* npm install
+Start the development server:
+* npm run dev
+* Open your browser and visit http://localhost:port (usually 5173 is the default port) to view the site locally.
+Deployment
+* To deploy your portfolio to GitHub Pages:
+* Build the project for production:
+* npm run build
+* Push the build folder to your GitHub Pages branch (usually gh-pages):
+* npm run deploy
+* If using GitHub Pages, follow the official guide for deployment.
+
 
 ### Live Demo
 You can access the live version of your portfolio once it's deployed:
